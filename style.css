@@ -113,7 +113,7 @@ body{
 }
 /* Home page */
 #hero{
-    background-image:url("../E-website/image/img/hero4.png");
+    background-image:url("https://res.cloudinary.com/dfujam4jz/image/upload/v1749718555/hero4_dra0kh.png");
     height: 90vh;
     width: 100%;
     background-size: cover;
@@ -133,7 +133,7 @@ body{
     color:#088178;
 }
 #hero button{
-    background-image:url("../E-website/image/img/button.png");
+    background-image:url("https://res.cloudinary.com/dfujam4jz/image/upload/v1749718551/button_myfk1t.png");
     background-color:transparent;
     color:#088178;
     border:0;
@@ -248,7 +248,7 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image:url("image/img/b2.jpg");
+    background-image:url("https://res.cloudinary.com/dfujam4jz/image/upload/v1749718545/b2_inzvlx.jpg");
     width:100%;
     height:40vh;
     background-size:cover;
@@ -284,7 +284,7 @@ body{
     justify-content: center;
     align-items: flex-start;
     text-align: center;
-    background-image:url("image/img/b17.jpg");
+    background-image:url("https://res.cloudinary.com/dfujam4jz/image/upload/v1749718550/b17_u3pfpz.jpg");
     min-width:580px;
     height:50vh;
     background-size:cover;
@@ -292,7 +292,7 @@ body{
     padding:30px;
 }
 #sm-banner .banner-box2{
-    background-image:url("image/img/b10.jpg");
+    background-image:url("https://res.cloudinary.com/dfujam4jz/image/upload/v1749718549/b10_rmgksl.jpg");
 }
 #sm-banner h4{
     color:#fff;
@@ -328,7 +328,7 @@ body{
     justify-content: center;
     align-items: flex-start;
     text-align: center;
-    background-image:url("image/img/b7.jpg");
+    background-image:url("https://res.cloudinary.com/dfujam4jz/image/upload/v1749718548/b7_bgzvl9.jpg");
     min-width:200px;
     height:30vh;
     background-size:cover;
@@ -337,10 +337,10 @@ body{
     margin-bottom: 20px;
 }
 #banner3 .banner-box2{
-    background-image: url("image/img/b4.jpg");
+    background-image: url("https://res.cloudinary.com/dfujam4jz/image/upload/v1749718546/b4_jjgadu.jpg");
 }
 #banner3 .banner-box3{
-    background-image: url("image/img/b18.jpg");
+    background-image: url("https://res.cloudinary.com/dfujam4jz/image/upload/v1749718550/b18_kh7y7n.jpg");
 }
 #banner3 h2{
     color:#ec544e;
@@ -352,7 +352,7 @@ body{
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    background-image: url("image/img/b14.png");
+    background-image: url("https://res.cloudinary.com/dfujam4jz/image/upload/v1749718549/b14_rjon0u.png");
     background-repeat: no-repeat;
     background-position: 20% 30%;
     background-color: #041e42;
@@ -798,7 +798,7 @@ footer a:hover{
 /* Show background image only on screens wider than 768px */
 @media (min-width: 769px) {
   #hero {
-    background-image: url("../E-website/image/img/hero4.png");
+    background-image: url("https://res.cloudinary.com/dfujam4jz/image/upload/v1749718555/hero4_dra0kh.png");
     background-size: cover;
     background-position: center;
   }
