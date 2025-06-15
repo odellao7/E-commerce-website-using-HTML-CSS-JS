@@ -1,13 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-html {
-  scroll-behavior: smooth;
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Spartan:wght@400;500;600;700&display=swap');
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    font-family:'spartan' , sans-serif;
+/* Base styles */
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Spartan', 'Open Sans', sans-serif;
 }
 h1{
     font-size:50px;
