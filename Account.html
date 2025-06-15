@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Account</title>
+  <link rel="stylesheet" href="account.css">
+</head>
+<body>
+  <div class="account-container">
+    <h1>My Account</h1>
+
+    <div class="quick-links">
+      <button onclick="showSection('orders')">Orders</button>
+      <button onclick="showSection('coupons')">Coupons</button>
+      <button onclick="showSection('help')">Help Center</button>
+      <button onclick="showSection('score')">Credit Score</button>
+      <button onclick="showSection('notifications')">Notifications</button>
+      <button onclick="showSection('settings')">Account Settings</button>
+    </div>
+
+    <div class="section" id="orders">
+      <h2>Orders</h2>
+      <p>You have no recent orders.</p>
+    </div>
+
+    <div class="section" id="coupons">
+      <h2>Coupons</h2>
+      <p>No available coupons at the moment.</p>
+    </div>
+
+    <div class="section" id="help">
+      <h2>Help Center</h2>
+      <p>For assistance, email support@example.com or call 123456788.</p>
+    </div>
+
+    <div class="section" id="score">
+      <h2>Credit Score</h2>
+      <p>Your shopping score is: <strong>745</strong></p>
+    </div>
+
+    <div class="section" id="notifications">
+      <h2>Notifications</h2>
+      <p>You have 3 new notifications.</p>
+    </div>
+
+    <div class="section" id="settings">
+      <h2>Account Settings</h2>
+      <form id="settings-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter email" required>
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="text" id="mobile" placeholder="Enter mobile number" required>
+
+        <label for="address">Saved Address:</label>
+        <textarea id="address" rows="3" placeholder="Enter delivery address" required></textarea>
+
+        <label for="notificationsToggle">Notification Settings:</label>
+        <select id="notificationsToggle">
+          <option value="enabled">Enabled</option>
+          <option value="disabled">Disabled</option>
+        </select>
+
+        
+
+        <button type="submit">Save Changes</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="account.js"></script>
+</body>
+</html>
+<style>
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  background:#E3E6f3;
+}
+
+.account-container {
+  max-width: 700px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.quick-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.quick-links button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #4ca3af;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.quick-links button:hover {
+  background-color: #385a8e;
+}
+
+.section {
+  display: none;
+  margin-top: 20px;
+}
+
+.section.active {
+  display: block;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+input, textarea, select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+  margin-top: 20px;
+  background-color: #1976d2;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0c0c0c;
+}
+</style>
+<script>
+function showSection(id) {
+  const sections = document.querySelectorAll(".section");
+  sections.forEach(section => {
+    section.classList.remove("active");
+  });
+  document.getElementById(id).classList.add("active");
+}
+
+// Save form
+document.getElementById("settings-form").addEventListener("submit", function(e) {
+  e.preventDefault();
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const mobile = document.getElementById("mobile").value;
+  const address = document.getElementById("address").value;
+  const notifications = document.getElementById("notificationsToggle").value;
+  const activity = document.getElementById("activity").value;
+
+  alert("Settings Saved!\n\n" +
+        "Name: " + name +
+        "\nEmail: " + email +
+        "\nMobile: " + mobile +
+        "\nAddress: " + address +
+        "\nNotifications: " + notifications +
+        "\nActivity: " + activity);
+});
+</script>
